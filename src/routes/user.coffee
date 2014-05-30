@@ -25,7 +25,7 @@ forget:(req, res) ->
 
 
 profile:(req, res) ->
-  if (not req.session.name) or (not req.session.logined)
+  if (! req.session.name) || (! req.session.logined)
     res.redirect "/"
   res.locals.username = req.session.name
   res.locals.authenticated = req.session.logined
@@ -37,7 +37,7 @@ profile:(req, res) ->
       blogs: blogs
 
 add_article:(req, res) ->
-  if (not req.session.name) or (not req.session.logined)
+  if (! req.session.name) || (! req.session.logined)
     res.redirect "/"
   res.locals.username = req.session.name
   res.locals.authenticated = req.session.logined
@@ -45,7 +45,7 @@ add_article:(req, res) ->
 
 
 modify:(req, res) ->
-  if (not req.session.name) or (not req.session.logined)
+  if (! req.session.name) || (! req.session.logined)
     res.redirect "/"
   res.locals.username = req.session.name
   res.locals.authenticated = req.session.logined
