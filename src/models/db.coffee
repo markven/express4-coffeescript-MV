@@ -13,4 +13,4 @@ Comment = new Schema(
 )
 mongoose.model "Blog", Blog
 mongoose.model "Comment", Comment
-mongoose.connect "mongodb://localhost/blog"
+mongoose.connect "mongodb://140.120.26.67/coffee_blog"
